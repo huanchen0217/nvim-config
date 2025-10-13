@@ -12,7 +12,22 @@ return {
         disabled_filetypes = {},
       },
       sections = {
-        lualine_a = { 'mode' },
+        lualine_a = { 
+          { 
+            'mode', 
+            color = function()
+              -- keeps mode colors and adds bold
+              local colors = require('lualine.themes.tokyonight')
+              local mode = vim.fn.mode()
+              local mode_color = colors.normal.a.bg  -- default fallback
+              if mode == 'i' then mode_color = colors.insert.a.bg
+              elseif mode == 'v' or mode == 'V' then mode_color = colors.visual.a.bg
+              elseif mode == 'R' then mode_color = colors.replace.a.bg
+              end
+              return { fg = nil, bg = mode_color, gui = 'bold' }
+            end
+          } 
+        },
         lualine_b = {
           'branch',
           {
@@ -31,7 +46,9 @@ return {
         lualine_c = { 'filename' },
         lualine_x = { 'encoding', 'fileformat', 'filetype' },
         lualine_y = { 'progress' },
-        lualine_z = { 'location' },
+        lualine_z = { 
+          { 'location', color = { gui = 'bold' } }  -- bold location
+        },
       },
       inactive_sections = {
         lualine_a = {},

@@ -13,6 +13,7 @@ vim.o.showmode = false
 vim.o.signcolumn = 'yes'
 vim.o.cursorline = true
 vim.o.scrolloff = 10
+vim.o.showcmd = false
 
 -- Behavior
 vim.o.breakindent = true

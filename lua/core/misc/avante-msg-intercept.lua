@@ -1,21 +1,21 @@
--- Capture and silence Avante's startup message
-_G.avante_message = nil
+-- store original notify function
+local orig_notify = vim.notify
+local last_avante_msg = nil
 
--- Intercept writes to :echom and vim.notify
-local old_notify = vim.notify
+-- override notify
 vim.notify = function(msg, level, opts)
-  if type(msg) == "string" and msg:match("Using previously selected model:") then
-    _G.avante_message = msg
-    return -- suppress display
+  if msg:match("Using previously selected model") then
+    last_avante_msg = msg  -- store silently
+    return  -- suppress display
   end
-  return old_notify(msg, level, opts)
+  return orig_notify(msg, level, opts)
 end
 
--- Function to show the stored message later
-function _G.whichAvante()
-  if _G.avante_message then
-    vim.notify(_G.avante_message, vim.log.levels.INFO)
+-- function to immediately show the stored Avante message
+function WhichAvante()
+  if last_avante_msg then
+    orig_notify(last_avante_msg, vim.log.levels.INFO, {})
   else
-    vim.notify("No Avante message captured.", vim.log.levels.WARN)
+    orig_notify("No Avante message stored.", vim.log.levels.WARN, {})
   end
 end
