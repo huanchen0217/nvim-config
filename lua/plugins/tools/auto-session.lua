@@ -2,15 +2,19 @@
 return {
   'rmagatti/auto-session',
   config = function()
-    require('auto-session').setup {
+    local autosession = require('auto-session')
+
+    autosession.setup {
       log_level = 'error',
-      auto_session_enabled = true,               -- still auto-save sessions
-      auto_session_enable_last_session = false,  -- disable auto-restore
+      auto_session_enabled = true,               -- auto-save sessions
+      auto_session_enable_last_session = false,  -- manual restore only
       auto_session_root_dir = vim.fn.stdpath('data') .. '/sessions/',
       pre_save_cmds = { "lua vim.lsp.buf.format({ async = false })" },
     }
 
-    -- Optional keybinding to restore manually
-    vim.keymap.set('n', '<leader>rs', ':RestoreSession<CR>', { desc = 'Restore Session' })
+    -- Manual restore keybinding
+    vim.keymap.set('n', '<leader>tr', function()
+      autosession.RestoreSession(vim.fn.getcwd())
+    end, { desc = 'Restore Session' })
   end,
 }
