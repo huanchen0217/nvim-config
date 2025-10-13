@@ -1,4 +1,3 @@
--- Test comment from IPHONE
 -- core
 require 'core.lazy'
 require 'core.settings'
