@@ -22,7 +22,6 @@ require('lazy').setup({
   require 'plugins.appearance.mini',
   require 'plugins.appearance.image-nvim',
   require 'plugins.appearance.indent_line',
-  require 'plugins.appearance.heirline',
 
   -- editing
   require 'plugins.editing.nvim-lspconfig',
