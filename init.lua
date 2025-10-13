@@ -22,11 +22,11 @@ require('lazy').setup({
   require 'plugins.appearance.mini',
   require 'plugins.appearance.image-nvim',
   require 'plugins.appearance.indent_line',
+  require 'plugins.appearance.heirline',
 
   -- editing
   require 'plugins.editing.nvim-lspconfig',
   require 'plugins.editing.nvim-cmp',
-  require 'plugins.editing.conform',
   require 'plugins.editing.treesitter',
   require 'plugins.editing.lint',
   require 'plugins.editing.autopairs',
@@ -49,6 +49,9 @@ require('lazy').setup({
 
   -- tools
   require 'plugins.tools.lazydev',
+  require 'plugins.tools.auto-session',
+  require 'plugins.tools.toggleterm',
+  require 'plugins.tools.project-nvim',
 
   -- ai
   require 'plugins.ai.avante',
