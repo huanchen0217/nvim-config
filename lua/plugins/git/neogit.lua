@@ -17,7 +17,7 @@ return {
     }
 
     -- Keymap to open Neogit
-    vim.keymap.set('n', '<leader>gg', function()
+    vim.keymap.set('n', '<leader>gn', function()
       neogit.open()
     end, { desc = 'Open Neogit' })
   end,

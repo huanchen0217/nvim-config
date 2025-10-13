@@ -19,6 +19,6 @@ end
 vim.api.nvim_create_autocmd('BufWinEnter', {
   pattern = '*',
   callback = function()
-    vim.api.nvim_buf_set_keymap(0, 'n', '<leader>tw', ':lua ToggleWrap()<CR>', { noremap = true, silent = true })
+    vim.api.nvim_buf_set_keymap(0, 'n', '<leader>tw', ':lua Toggle[w]rap()<CR>', { noremap = true, silent = true })
   end,
 })

@@ -19,9 +19,3 @@ vim.keymap.set('n', '<Space>m', function()
   vim.cmd 'w'
   vim.cmd('!' .. 'make ' .. mode .. ' EXE=' .. exe_name)
 end, opts)
-
-------------
---- JavaScript
-------------
-
-vim.keymap.set('n', '<leader>rj', ':w<CR>:!node %<CR>')

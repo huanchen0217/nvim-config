@@ -14,9 +14,9 @@ return {
     -- Keymap to open projects
     vim.keymap.set(
       "n",
-      "<leader>fp",
+      "<leader>sp",
       "<cmd>Telescope projects<cr>",
-      { desc = "Find Project" }
+      { desc = "[S]earch [P]rojects" }
     )
   end,
 }

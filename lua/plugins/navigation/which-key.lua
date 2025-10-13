@@ -33,6 +33,33 @@ return { -- Which-key
       },
     },
     spec = {
+    -- Git
+
+      { '<leader>g', group = '[G]it Suite'},
+      { '<leader>gs', group = '[S]tage' },
+      { '<leader>gc', group = '[C]ommit' },
+      { '<leader>gp', group = '[P]ush' },
+      { '<leader>gl', group = 'Pul[l]' },
+      { '<leader>gr', group = '[R]eset' },
+      { '<leader>gC', group = '[B]ranch' },
+      { '<leader>gT', group = '[T]ag' },
+      { '<leader>gy', group = 'Cherr[y]-pick' },
+      { '<leader>gd', group = '[D]iff' },
+      { '<leader>gt', group = 'S[t]ash' },
+      { '<leader>gS', group = '[S]tatus' },
+      { '<leader>gn', group = '[N]eogit'},
+      { '<leader>gL', group = '[L]og'},
+    --Other
+      
+      { '<leader>tt', group = 'Toggle [T]erminal'},
+      { '<leader>tc', group = 'nvim-[c]mp options'},
+      { '<leader>th', group = 'Toggle C[h]eckbox'},
+      { '<leader>m', group = '[M]ake C++ Build'},
+      { '<leader>w', group = '[W]orkspace'},
+      { '<leader>a', group = '[A]vante'},
+      { '<leader>o', group = '[O]pen'},
+      { '<leader>w', group = '[W]orkspace'},
+      { '<leader>n', group = 'Mi[n]i Map'},
       { '<leader>s', group = '[S]earch' },
       { '<leader>t', group = '[T]oggle' },
       { '<leader>h', group = 'Git [H]unk', mode = { 'n', 'v' } },

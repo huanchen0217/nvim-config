@@ -1,4 +1,5 @@
-return { -- Obsidian
+return {
+  -- Obsidian
   'epwalsh/obsidian.nvim',
   version = '*', -- latest release
   lazy = true,
@@ -46,11 +47,13 @@ return { -- Obsidian
             return require('obsidian').util.gf_passthrough()
           end,
           opts = { noremap = false, expr = true, buffer = true },
+          desc = 'Go to Obsidian link',
         },
-        ['<leader>ch'] = {
+        ['<leader>th'] = {
           action = function()
             return require('obsidian').util.toggle_checkbox()
           end,
+          desc = 'Toggle checkbox',
         },
       },
     }

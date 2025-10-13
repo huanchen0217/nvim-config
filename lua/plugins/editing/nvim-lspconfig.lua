@@ -57,7 +57,7 @@ return { -- LSP Config
         map('<C-k>', vim.lsp.buf.signature_help, 'Signature', 'i')
 
         -- Formatting: leader f
-        map('<leader>f', function()
+        map('<leader>F', function()
           vim.lsp.buf.format { async = true }
         end, 'Format Buffer')
 

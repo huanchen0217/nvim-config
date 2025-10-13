@@ -5,8 +5,8 @@ return { --Markdown Preview in Browser
   ft = { 'markdown' },
   init = function()
     vim.g.mkdp_filetypes = { 'markdown' }
-    vim.keymap.set('n', '<leader>Mm', function()
+    vim.keymap.set('n', '<leader>tm', function()
       vim.cmd 'MarkdownPreviewToggle'
-    end, { desc = 'Toggle Markdown Preview' })
+    end, { desc = 'Toggle [M]arkdown Preview' })
   end,
 }

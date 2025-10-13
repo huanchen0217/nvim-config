@@ -1,4 +1,3 @@
--- Git prefix
 local git_prefix = '<leader>g'
 
 -- Stage submenu
@@ -82,15 +81,15 @@ vim.keymap.set(
 -- Tag submenu
 vim.keymap.set(
   'n',
-  git_prefix .. 'ga',
+  git_prefix .. 'Ta',
   "<cmd>lua vim.fn.inputsave(); local tag = vim.fn.input('Tag name: '); vim.fn.inputrestore(); vim.cmd('!git tag '..tag)<CR>",
   { desc = 'Add Tag' }
 )
-vim.keymap.set('n', git_prefix .. 'gl', '<cmd>!git tag<CR>', { desc = 'List Tags' })
+vim.keymap.set('n', git_prefix .. 'Tl', '<cmd>!git tag<CR>', { desc = 'List Tags' })
 vim.keymap.set(
   'n',
-  git_prefix .. 'gd',
+  git_prefix .. 'Td',
   "<cmd>lua vim.fn.inputsave(); local tag = vim.fn.input('Delete tag: '); vim.fn.inputrestore(); vim.cmd('!git tag -d '..tag)<CR>",
   { desc = 'Delete Tag' }
 )
-vim.keymap.set('n', git_prefix .. 'gp', '<cmd>!git push --tags<CR>', { desc = 'Push Tags' })
+vim.keymap.set('n', git_prefix .. 'Tp', '<cmd>!git push --tags<CR>', { desc = 'Push Tags' })
