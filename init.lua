@@ -49,7 +49,6 @@ require('lazy').setup({
 
   -- tools
   require 'plugins.tools.lazydev',
-  require 'plugins.tools.auto-session',
   require 'plugins.tools.toggleterm',
   require 'plugins.tools.project-nvim',
 
