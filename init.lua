@@ -5,6 +5,7 @@ require 'core.settings'
 -- misc
 require 'core.misc.clipboard'
 require 'core.misc.autocmds'
+require 'core.misc.avante-msg-intercept'
 
 -- keymaps
 require 'core.keymaps.core-keymaps'
