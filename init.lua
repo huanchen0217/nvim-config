@@ -55,6 +55,7 @@ require('lazy').setup({
 
   -- ai
   require 'plugins.ai.avante',
+  require 'plugins.ai.neocodeium',
 
   -- debug
   require 'plugins.debug.debug',
