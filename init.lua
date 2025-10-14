@@ -54,7 +54,6 @@ require('lazy').setup({
   require 'plugins.tools.project-nvim',
 
   -- ai
-  require 'plugins.ai.avante',
 
   -- debug
   require 'plugins.debug.debug',
