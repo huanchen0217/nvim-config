@@ -56,7 +56,6 @@ return { -- Which-key
       { '<leader>th', group = 'Toggle C[h]eckbox'},
       { '<leader>m', group = '[M]ake C++ Build'},
       { '<leader>w', group = '[W]orkspace'},
-      { '<leader>a', group = '[A]vante'},
       { '<leader>o', group = '[O]pen'},
       { '<leader>w', group = '[W]orkspace'},
       { '<leader>n', group = 'Mi[n]i Map'},
