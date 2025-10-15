@@ -12,6 +12,7 @@ require 'core.keymaps.core-keymaps'
 require 'core.keymaps.code-keymaps'
 require 'core.keymaps.git-keymaps'
 require 'core.keymaps.toggle-softwrap'
+require 'core.keymaps.bazel-keymaps'
 
 -- lazy Setup
 require('lazy').setup({
@@ -31,6 +32,7 @@ require('lazy').setup({
   require 'plugins.editing.treesitter',
   require 'plugins.editing.lint',
   require 'plugins.editing.autopairs',
+  require 'plugins.editing.refactoring',
 
   -- navigation
   require 'plugins.navigation.which-key',
@@ -52,12 +54,17 @@ require('lazy').setup({
   require 'plugins.tools.lazydev',
   require 'plugins.tools.toggleterm',
   require 'plugins.tools.project-nvim',
+  require 'plugins.tools.dadbod',
+
+  -- testing
+  require 'plugins.testing.neotest',
 
   -- ai
   require 'plugins.ai.neocodeium',
 
   -- debug
   require 'plugins.debug.debug',
+  require 'plugins.debug.virtual-text',
 }, {
   ui = {
     icons = vim.g.have_nerd_font and {} or {

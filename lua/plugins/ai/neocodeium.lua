@@ -29,19 +29,23 @@ return {
     }
 
     -- keymaps (insert mode)
-    vim.keymap.set('i', '<A-f>', neocodeium.accept)
-    vim.keymap.set('i', '<A-w>', neocodeium.accept_word)
-    vim.keymap.set('i', '<A-a>', neocodeium.accept_line)
-    vim.keymap.set('i', '<A-e>', neocodeium.cycle_or_complete)
+    vim.keymap.set('i', '<A-f>', neocodeium.accept) -- accept
+    vim.keymap.set('i', '<A-w>', neocodeium.accept_word) -- accept word
+    vim.keymap.set('i', '<A-a>', neocodeium.accept_line) -- accept line
+    vim.keymap.set('i', '<A-e>', neocodeium.cycle_or_complete) -- next suggestion
     vim.keymap.set('i', '<A-r>', function()
       neocodeium.cycle_or_complete(-1)
-    end)
-    vim.keymap.set('i', '<A-c>', neocodeium.clear)
+    end) -- previous suggestion
+    vim.keymap.set('i', '<A-c>', neocodeium.clear) -- clear suggestion
 
-    -- keymap for NeoCodeium chat in normal mode
-    vim.keymap.set('n', '<leader>tNc', function()
+    -- keymaps (normal mode)
+    vim.keymap.set('n', '<leader>tNt', function()
       require('neocodeium.commands').toggle()
-    end, { noremap = true, silent = true })
+    end, { noremap = true, silent = true }) -- toggle NeoCodeium
+
+    vim.keymap.set('n', '<leader>tNc', function()
+      require('neocodeium.commands').chat()
+    end, { noremap = true, silent = true }) -- open NeoCodeium chat
 
     -- nvim-cmp setup
     cmp.setup {
