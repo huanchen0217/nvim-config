@@ -52,6 +52,7 @@ return { -- Which-key
             --Other
 
             { '<leader>tt', group = 'Toggle [T]erminal' },
+            { '<leader>r', group = '[R]efactor/Debug Tools'},
             { '<leader>z',  group = 'Ba[Z]el}' },
             { '<leader>e',  group = 'T[E]sting' },
             { '<leader>tN', group = '[N]eoCodeium Options' },
@@ -64,7 +65,7 @@ return { -- Which-key
             { '<leader>n',  group = 'Mi[n]i Map' },
             { '<leader>s',  group = '[S]earch' },
             { '<leader>t',  group = '[T]oggle' },
-            { '<leader>h',  group = 'Git [H]unk',          mode = { 'n', 'v' } },
+            { '<leader>h',  group = 'Rest [H]ttp' },
         },
     },
 }

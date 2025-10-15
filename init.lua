@@ -55,6 +55,7 @@ require('lazy').setup({
   require 'plugins.tools.toggleterm',
   require 'plugins.tools.project-nvim',
   require 'plugins.tools.dadbod',
+  require 'plugins.tools.rest',
 
   -- testing
   require 'plugins.testing.neotest',

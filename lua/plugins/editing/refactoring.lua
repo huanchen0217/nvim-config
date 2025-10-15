@@ -27,7 +27,7 @@ return {
       'v',
       '<leader>r',
       function() require('refactoring').select_refactor() end,
-      { noremap = true, silent = true, desc = 'Select refactor' }
+      { noremap = true, silent = true, desc = 'Select [R]efactor' }
     )
 
     vim.keymap.set(
