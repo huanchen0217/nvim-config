@@ -32,14 +32,14 @@ return {
 
     vim.keymap.set(
       'n',
-      '<leader>rb',
+      '<leader>db',
       function() require('refactoring').debug.printf({ below = false }) end,
       { noremap = true, silent = true, desc = 'Add printf debug' }
     )
 
     vim.keymap.set(
       'n',
-      '<leader>rc',
+      '<leader>dc',
       function() require('refactoring').debug.cleanup({}) end,
       { noremap = true, silent = true, desc = 'Cleanup debug prints' }
     )

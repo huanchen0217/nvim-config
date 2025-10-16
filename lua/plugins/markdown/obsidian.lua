@@ -42,18 +42,18 @@ return {
         name = 'telescope.nvim',
       },
       mappings = {
-        ['gf'] = {
+        ['G'] = {
           action = function()
             return require('obsidian').util.gf_passthrough()
           end,
           opts = { noremap = false, expr = true, buffer = true },
           desc = 'Go to Obsidian link',
         },
-        ['<leader>th'] = {
+        ['<leader>c'] = {
           action = function()
             return require('obsidian').util.toggle_checkbox()
           end,
-          desc = 'Toggle checkbox',
+          desc = 'Toggle [C]heckbox',
         },
       },
     }

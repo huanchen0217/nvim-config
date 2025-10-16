@@ -46,10 +46,10 @@ return {
     local map = vim.keymap.set
     local opts = { noremap = true, silent = true }
 
-    map("n", "<leader>et", function() neotest.run.run() end, vim.tbl_extend("force", opts, { desc = "Run nearest test" }))
-    map("n", "<leader>ef", function() neotest.run.run(vim.fn.expand("%")) end, vim.tbl_extend("force", opts, { desc = "Run current file tests" }))
-    map("n", "<leader>ed", function() neotest.run.run({ strategy = "dap" }) end, vim.tbl_extend("force", opts, { desc = "Debug nearest test" }))
-    map("n", "<leader>eo", function() neotest.output.open({ enter = true }) end, vim.tbl_extend("force", opts, { desc = "Open test output" }))
-    map("n", "<leader>es", function() neotest.summary.toggle() end, vim.tbl_extend("force", opts, { desc = "Toggle test summary" }))
+    map("n", "<leader>Tt", function() neotest.run.run() end, vim.tbl_extend("force", opts, { desc = "Run nearest test" }))
+    map("n", "<leader>Tf", function() neotest.run.run(vim.fn.expand("%")) end, vim.tbl_extend("force", opts, { desc = "Run current file tests" }))
+    map("n", "<leader>Td", function() neotest.run.run({ strategy = "dap" }) end, vim.tbl_extend("force", opts, { desc = "Debug nearest test" }))
+    map("n", "<leader>To", function() neotest.output.open({ enter = true }) end, vim.tbl_extend("force", opts, { desc = "Open test output" }))
+    map("n", "<leader>Ts", function() neotest.summary.toggle() end, vim.tbl_extend("force", opts, { desc = "Toggle test summary" }))
   end,
 }

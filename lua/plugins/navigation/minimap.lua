@@ -4,21 +4,21 @@ return {
   lazy = false, -- Load immediately
   keys = {
     -- Global Minimap Controls
-    { '<leader>nm', '<cmd>Neominimap Toggle<cr>', desc = 'Toggle global minimap' },
-    { '<leader>no', '<cmd>Neominimap Enable<cr>', desc = 'Enable global minimap' },
-    { '<leader>nc', '<cmd>Neominimap Disable<cr>', desc = 'Disable global minimap' },
-    { '<leader>nr', '<cmd>Neominimap Refresh<cr>', desc = 'Refresh global minimap' },
+    { '<leader>Mm', '<cmd>Neominimap Toggle<cr>', desc = 'Toggle global minimap' },
+    { '<leader>Mo', '<cmd>Neominimap Enable<cr>', desc = 'Enable global minimap' },
+    { '<leader>Mc', '<cmd>Neominimap Disable<cr>', desc = 'Disable global minimap' },
+    { '<leader>Mr', '<cmd>Neominimap Refresh<cr>', desc = 'Refresh global minimap' },
 
     -- Window-Specific Minimap Controls
-    { '<leader>nwt', '<cmd>Neominimap WinToggle<cr>', desc = 'Toggle minimap for current window' },
-    { '<leader>nwr', '<cmd>Neominimap WinRefresh<cr>', desc = 'Refresh minimap for current window' },
-    { '<leader>nwo', '<cmd>Neominimap WinEnable<cr>', desc = 'Enable minimap for current window' },
-    { '<leader>nwc', '<cmd>Neominimap WinDisable<cr>', desc = 'Disable minimap for current window' },
+    { '<leader>Mwt', '<cmd>Neominimap WinToggle<cr>', desc = 'Toggle minimap for current window' },
+    { '<leader>Mwr', '<cmd>Neominimap WinRefresh<cr>', desc = 'Refresh minimap for current window' },
+    { '<leader>Mwo', '<cmd>Neominimap WinEnable<cr>', desc = 'Enable minimap for current window' },
+    { '<leader>Mwc', '<cmd>Neominimap WinDisable<cr>', desc = 'Disable minimap for current window' },
 
     -- Focus Controls
-    { '<leader>nf', '<cmd>Neominimap Focus<cr>', desc = 'Focus on minimap' },
-    { '<leader>nu', '<cmd>Neominimap Unfocus<cr>', desc = 'Unfocus minimap' },
-    { '<leader>ns', '<cmd>Neominimap ToggleFocus<cr>', desc = 'Switch focus on minimap' },
+    { '<leader>Mf', '<cmd>Neominimap Focus<cr>', desc = 'Focus on minimap' },
+    { '<leader>Mu', '<cmd>Neominimap Unfocus<cr>', desc = 'Unfocus minimap' },
+    { '<leader>Ms', '<cmd>Neominimap ToggleFocus<cr>', desc = 'Switch focus on minimap' },
   },
   opts = {
     auto_enable = true, -- Enable minimap on startup

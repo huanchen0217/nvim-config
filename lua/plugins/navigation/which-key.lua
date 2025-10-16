@@ -52,9 +52,11 @@ return { -- Which-key
             --Other
 
             { '<leader>tt', group = 'Toggle [T]erminal' },
-            { '<leader>r', group = '[R]efactor/Debug Tools'},
+            { '<leader>c', group = 'Toggle [C]heckbox'},
+            { '<leader>d', group = '[D]ebug Tools'},
+            { '<leader>r', group = '[R]est'},
             { '<leader>z',  group = 'Ba[Z]el}' },
-            { '<leader>e',  group = 'T[E]sting' },
+            { '<leader>T',  group = '[T]esting' },
             { '<leader>tN', group = '[N]eoCodeium Options' },
             { '<leader>tc', group = 'nvim-[c]mp options' },
             { '<leader>th', group = 'Toggle C[h]eckbox' },
@@ -62,10 +64,10 @@ return { -- Which-key
             { '<leader>w',  group = '[W]orkspace' },
             { '<leader>o',  group = '[O]pen' },
             { '<leader>w',  group = '[W]orkspace' },
-            { '<leader>n',  group = 'Mi[n]i Map' },
+            { '<leader>M',  group = '[M]ini Map' },
             { '<leader>s',  group = '[S]earch' },
             { '<leader>t',  group = '[T]oggle' },
-            { '<leader>h',  group = 'Rest [H]ttp' },
+            { '<leader>h',  group = '[H]arpoon' },
         },
     },
 }

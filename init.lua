@@ -40,6 +40,7 @@ require('lazy').setup({
   require 'plugins.navigation.neo-tree',
   require 'plugins.navigation.neoscroll',
   require 'plugins.navigation.minimap',
+  require 'plugins.navigation.harpoon',
 
   -- git
   require 'plugins.git.gitsigns',

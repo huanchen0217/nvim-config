@@ -12,8 +12,8 @@ return {
     local opts = { noremap = true, silent = true }
 
     -- Send request
-    map("n", "<leader>hr", "<Plug>RestNvim", opts)
+    map("n", "<leader>rr", "<Plug>RestNvim", opts)
     -- Show last response
-    map("n", "<leader>hl", "<Plug>RestNvimLast", opts)
+    map("n", "<leader>rl", "<Plug>RestNvimLast", opts)
   end,
 }
