@@ -42,7 +42,7 @@ return {
         name = 'telescope.nvim',
       },
       mappings = {
-        ['G'] = {
+        ['<leader>G'] = {
           action = function()
             return require('obsidian').util.gf_passthrough()
           end,

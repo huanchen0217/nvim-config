@@ -11,7 +11,6 @@ require 'core.misc.avante-msg-intercept'
 require 'core.keymaps.core-keymaps'
 require 'core.keymaps.code-keymaps'
 require 'core.keymaps.git-keymaps'
-require 'core.keymaps.toggle-softwrap'
 require 'core.keymaps.bazel-keymaps'
 
 -- lazy Setup
@@ -25,6 +24,7 @@ require('lazy').setup({
   require 'plugins.appearance.image-nvim',
   require 'plugins.appearance.indent_line',
   require 'plugins.appearance.lualine',
+  require 'plugins.appearance.calendar',
 
   -- editing
   require 'plugins.editing.nvim-lspconfig',
