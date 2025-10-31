@@ -25,6 +25,8 @@ require('lazy').setup({
   require 'plugins.appearance.indent_line',
   require 'plugins.appearance.lualine',
   require 'plugins.appearance.calendar',
+  require 'plugins.appearance.pomo',
+  require 'plugins.appearance.notify',
 
   -- editing
   require 'plugins.editing.nvim-lspconfig',

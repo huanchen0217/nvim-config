@@ -51,10 +51,13 @@ return { -- Which-key
             { '<leader>gL', group = '[L]og' },
             --Other
 
+            { '<leader>C',  group = '[C]alendar Options' },
+            { '<leader>p', group = '[P]omodoro Options'},
+            { '<leader>G',  group = '[G]o to File' },
             { '<leader>tt', group = 'Toggle [T]erminal' },
-            { '<leader>c', group = 'Toggle [C]heckbox'},
-            { '<leader>d', group = '[D]ebug Tools'},
-            { '<leader>r', group = '[R]est'},
+            { '<leader>c',  group = 'Toggle [C]heckbox' },
+            { '<leader>d',  group = '[D]ebug Tools' },
+            { '<leader>r',  group = '[R]est' },
             { '<leader>z',  group = 'Ba[Z]el}' },
             { '<leader>T',  group = '[T]esting' },
             { '<leader>tN', group = '[N]eoCodeium Options' },
