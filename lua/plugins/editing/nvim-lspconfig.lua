@@ -1,5 +1,6 @@
 return { -- LSP Config
   'neovim/nvim-lspconfig',
+  event = 'BufReadPre',
   dependencies = {
     { 'mason-org/mason.nvim', opts = {} },
     'mason-org/mason-lspconfig.nvim',
@@ -57,9 +58,9 @@ return { -- LSP Config
         map('<C-k>', vim.lsp.buf.signature_help, 'Signature', 'i')
 
         -- Formatting: leader f
-        map('<leader>F', function()
+        map('<leader>f', function()
           vim.lsp.buf.format { async = true }
-        end, 'Format Buffer')
+        end, '[F]ormat Buffer')
 
         -- Workspace folders
         map('<leader>wa', vim.lsp.buf.add_workspace_folder, 'Add Workspace Folder')

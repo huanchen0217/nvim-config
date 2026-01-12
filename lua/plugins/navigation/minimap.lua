@@ -21,7 +21,7 @@ return {
     { '<leader>Ms', '<cmd>Neominimap ToggleFocus<cr>', desc = 'Switch focus on minimap' },
   },
   opts = {
-    auto_enable = true, -- Enable minimap on startup
+    auto_enable = false, -- Enable minimap on startup
     -- Optional: add any other Neominimap config here
   },
   -- Optional: set wrap and sidescrolloff only when minimap is active

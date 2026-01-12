@@ -1,6 +1,6 @@
 -- Keymaps
 vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
-vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostic [Q]uickfix list' })
+vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = '[Q]uickfix List' })
 vim.keymap.set('t', '<Esc><Esc>', '<C-\\><C-n>', { desc = 'Exit terminal mode' })
 
 --Open file with default macOS app
@@ -30,7 +30,7 @@ vim.keymap.set('n', '<leader>tr', function()
 end, { desc = 'Reset all checkboxes in file' })
 
 -- Global toggle for soft wrapping
-local wrap_enabled = false
+local wrap_enabled = true
 
 function ToggleWrap()
   if wrap_enabled then

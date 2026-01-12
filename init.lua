@@ -1,3 +1,6 @@
+-- enable Lua module caching (Neovim 0.9+)
+vim.loader.enable()
+
 -- core
 require 'core.lazy'
 require 'core.settings'
@@ -27,6 +30,9 @@ require('lazy').setup({
   require 'plugins.appearance.calendar',
   require 'plugins.appearance.pomo',
   require 'plugins.appearance.notify',
+  require 'plugins.appearance.persistence',
+  require 'plugins.appearance.tabby',
+  require 'plugins.appearance.transparent',
 
   -- editing
   require 'plugins.editing.nvim-lspconfig',
@@ -59,6 +65,7 @@ require('lazy').setup({
   require 'plugins.tools.project-nvim',
   require 'plugins.tools.dadbod',
   require 'plugins.tools.rest',
+  require 'plugins.tools.kanban',
 
   -- testing
   require 'plugins.testing.neotest',

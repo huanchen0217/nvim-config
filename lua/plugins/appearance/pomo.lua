@@ -2,7 +2,7 @@
 return {
     "epwalsh/pomo.nvim",
     version = "*",
-    lazy = false, -- load immediately so commands and keymaps work
+    lazy = true, -- load immediately so commands and keymaps work
     dependencies = { "rcarriga/nvim-notify" },
     config = function()
         local pomo = require("pomo")

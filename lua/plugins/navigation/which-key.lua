@@ -1,6 +1,6 @@
 return { -- Which-key
     'folke/which-key.nvim',
-    event = 'VimEnter',
+    lazy = false,
     opts = {
         delay = 0,
         icons = {
@@ -36,6 +36,7 @@ return { -- Which-key
             -- Git
 
             { '<leader>g',  group = '[G]it Suite' },
+            { '<leader>gg', group = '[G]itsigns Tools' },
             { '<leader>gs', group = '[S]tage' },
             { '<leader>gc', group = '[C]ommit' },
             { '<leader>gp', group = '[P]ush' },
@@ -52,15 +53,20 @@ return { -- Which-key
             --Other
 
             { '<leader>C',  group = '[C]alendar Options' },
+            { '<leader>c', group = 'Toggle [C]heckbox'},
+            { '<leader>;', group = 'Tabby'},
+            { '<leader>ym', group = 'Tab [M]ove'},
+            { '<leader>y', group = 'Tabb[y]'},
+            { '<leader>P', group = '[P]ersistence' },
+            { '<leader>b', group = '[B]arbar'},
             { '<leader>p', group = '[P]omodoro Options'},
             { '<leader>G',  group = '[G]o to File' },
             { '<leader>tt', group = 'Toggle [T]erminal' },
-            { '<leader>c',  group = 'Toggle [C]heckbox' },
             { '<leader>d',  group = '[D]ebug Tools' },
             { '<leader>r',  group = '[R]est' },
             { '<leader>z',  group = 'Ba[Z]el}' },
             { '<leader>T',  group = '[T]esting' },
-            { '<leader>tN', group = '[N]eoCodeium Options' },
+            { '<leader>tC', group = 'Neo[C]odeium Options' },
             { '<leader>tc', group = 'nvim-[c]mp options' },
             { '<leader>th', group = 'Toggle C[h]eckbox' },
             { '<leader>m',  group = '[M]ake C++ Build' },

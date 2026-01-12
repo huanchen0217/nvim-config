@@ -39,11 +39,11 @@ return {
     vim.keymap.set('i', '<A-c>', neocodeium.clear) -- clear suggestion
 
     -- keymaps (normal mode)
-    vim.keymap.set('n', '<leader>tNt', function()
+    vim.keymap.set('n', '<leader>tCt', function()
       require('neocodeium.commands').toggle()
     end, { noremap = true, silent = true }) -- toggle NeoCodeium
 
-    vim.keymap.set('n', '<leader>tNc', function()
+    vim.keymap.set('n', '<leader>tCc', function()
       require('neocodeium.commands').chat()
     end, { noremap = true, silent = true }) -- open NeoCodeium chat
 

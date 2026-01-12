@@ -13,6 +13,11 @@ return {
   },
   opts = {
     filesystem = {
+      filtered_items = {
+        hide_dotfiles = false,     -- show dotfiles
+        hide_gitignored = false,   -- show gitignored files
+        never_show = { ".DS_Store", "thumbs.db" },
+      },
       window = {
         mappings = {
           ['\\'] = 'close_window',
